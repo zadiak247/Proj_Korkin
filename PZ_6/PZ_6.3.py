@@ -13,9 +13,11 @@ k = random.randint(1, abs(N))
 for i in range(abs(N)):
     a.append(random.randrange(-1000, 1001))
 
+print('Исходный список: \n', a, '\nРазмер списка: ', abs(N))
+
 for i in range(k):
     a.insert(0, a.pop())
 for i in range(k):
     a[i] = 0
 
-print('итоговый список: ', '\n', a)
+print('\nитоговый список: \n', a)
