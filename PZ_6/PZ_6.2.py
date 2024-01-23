@@ -5,10 +5,10 @@
 
 import random
 
-N = random.randrange(-1000, 1001)
+N = random.randrange(-10, 10)
 a = []
 for i in range(abs(N)):
-    a.append(random.randrange(-1000, 1001))
+    a.append(random.randrange(-10, 11))
 
 print('Исходный список: \n', a, '\nРазмер списка: ', abs(N))
 

@@ -5,14 +5,14 @@ Aₙ, Aₙ₋₂, Aₙ₋₄, ..., A₁. Условный оператор не 
 
 import random
 
-N = random.randint(-1000, 1000)
+N = random.randint(-10, 10)
 while N % 2 == 0:
-    N = random.randint(-1000, 1000)
+    N = random.randint(-10, 10)
 
 A = []
 i = 0
 while i < abs(N):
-    A.append(random.randint(-1000, 1000))
+    A.append(random.randint(-10, 10))
     i += 1
 
 print('Исходный список: \n', A, '\nРазмер списка: ', abs(N))

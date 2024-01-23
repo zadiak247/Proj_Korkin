@@ -8,7 +8,7 @@ import random
 
 N = random.randrange(-1000, 1001)
 a = []
-k = random.randint(1, abs(N))
+k = 2
 
 for i in range(abs(N)):
     a.append(random.randrange(-1000, 1001))
