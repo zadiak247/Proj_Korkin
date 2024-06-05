@@ -5,18 +5,18 @@
 
 
 class Animal:
-    def __init__(self):
+    def __init__(self, name, kind):
         """
         self.name = input('Ввод имени животного: ')
         self.kind = input('Ввод вида животного: ')
         """
-        self.name = 'Лёва'
-        self.kind = 'лев'
-
+        self.name = name
+        self.kind = kind
 
     def inform(self):
         return f'\nИнформация о животном:\nИмя: {self.name}, Вид: {self.kind}'
 
 
+anim_1 = Animal('лев', 'Лева').inform()
 if __name__ == '__main__':
-    print(Animal().inform())
+    print(anim_1)

@@ -7,9 +7,9 @@ import pickle
 from PZ_16_1 import Animal
 
 
-def save_def():
+def save_def(anim_n):
     with open("pickle.bin", "wb") as file:
-        pickle.dump(Animal().inform(), file)
+        pickle.dump(anim_n, file)
 
 
 def load_def():
@@ -17,5 +17,13 @@ def load_def():
         return pickle.load(file)
 
 
-save_def()
+anim_1 = Animal('лев', 'Лева').inform()
+anim_2 = Animal('слон', 'Богдан').inform()
+anim_3 = Animal('собака', 'Боблин').inform()
+
+save_def(anim_1)
+print(load_def())
+save_def(anim_2)
+print(load_def())
+save_def(anim_3)
 print(load_def())

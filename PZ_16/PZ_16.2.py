@@ -6,21 +6,14 @@
 
 class Transport:
 
-    @property
-    def brand(self):
-        pass
-
-    @property
-    def model(self):
-        pass
-
-    @property
-    def issue_year(self):
-        pass
+    def __init__(self, mark, model, release_year):
+        self.mark = mark
+        self.model = model
+        self.release_year = release_year
 
 
 class Automobile(Transport):
-    @property
-    def body_type(self):
-        pass
 
+    def __init__(self, mark, model, release_year, body_type):
+        super().__init__(mark, model, release_year)
+        self.body_type = body_type
