@@ -12,7 +12,8 @@ def get_info():
     Y = int(entry3.get())
     Price = A / X
     Y_kg = Price * Y
-    label["text"] = f'Один кг конфет стоит {Price} рублей.\n{Y} кг конфет стоит {Y_kg} рублей.'
+    label["text"] = 'Один кг конфет стоит %.02F рублей.\n%d кг конфет стоит %.02f рублей.' % (Price, Y, Y_kg)
+    # label["text"] = f'Один кг конфет стоит {Price} рублей.\n{Y} кг конфет стоит {Y_kg} рублей.'
 
 
 root = Tk()
